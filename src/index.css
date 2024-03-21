@@ -8,3 +8,10 @@
 body {
   height: 100svh;
 }
+
+.cards-div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
