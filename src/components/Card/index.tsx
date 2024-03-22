@@ -1,10 +1,11 @@
+import { Link } from "react-router-dom";
 import "./Card.Modules.scss";
-export default function Card({ videoURL, imgURL }) {
+export default function Card({ id, imgURL }) {
   return (
     <section className="card-div">
-      <a href={`${videoURL}`} rel="noreferrer noopener" target="_blank">
+      <Link to={`/watch/${id}`}>
         <img src={`${imgURL}`} alt="craque neto nervoso com neymar" />
-      </a>
+      </Link>
     </section>
   );
 }

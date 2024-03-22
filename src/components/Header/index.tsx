@@ -1,14 +1,23 @@
 import styles from "./Header.module.scss";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   return (
     <header className={styles["nav-div"]}>
-      <span>
-        I <span className={styles["coracao"]}>♥</span> CRAQUE NETO
-      </span>
+      <Link to="/">
+        <span>
+          I <span className={styles["coracao"]}>♥</span> CRAQUE NETO
+        </span>
+      </Link>
+
       <nav>
-        <a href="">Home</a>
-        <a href="">Filmes</a>
+        <Link to="/">
+          <a href="">Home</a>
+        </Link>
+
+        <Link to="/watch">
+          <a href="">Filmes</a>
+        </Link>
       </nav>
     </header>
   );
