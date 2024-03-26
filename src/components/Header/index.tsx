@@ -18,6 +18,10 @@ export default function Header() {
         <Link to="/watch">
           <a href="">Filmes</a>
         </Link>
+
+        <Link to="/search">
+          <a href="">Pesquisar</a>
+        </Link>
       </nav>
     </header>
   );
